@@ -3,22 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Goose RPG Demo v1.4.6</title>
+<title>Goose RPG Demo 1.5.1</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Goose RPG Demo v1.4.6.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Goose RPG Demo v1.4.6" startnode="8" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="CE41150C-0F72-4A08-B4FC-C2141838F1FC" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="625,1200" size="100,100">(if:$name is  or &quot;&quot;)[(set: $name to &quot;Quackle&quot;)]\
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Goose RPG Demo 1.5.1.</tw-noscript></noscript></tw-story>
+<tw-storydata name="Goose RPG Demo 1.5.1" startnode="86" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="CE41150C-0F72-4A08-B4FC-C2141838F1FC" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="600,1200" size="100,100">(if:$name is  or &quot;&quot;)[(set: $name to &quot;Quackle&quot;)]\
 Welcome to **Feathervale**, homeland of the geese!  
 
 You are **$name the Goose**, a young but brave adventurer.  
 
-What would you like to do?
-
 [[Start your Adventure|Tutorial]]
-[[Credits]]
-(if: $name is &quot;DEBUG-nWtqCRLxvJpAmzFeKhUe&quot;)[[[Debug|Debug - Menu]]]</tw-passagedata><tw-passagedata pid="2" name="Tutorial" tags="" position="900,1200" size="100,100">Welcome to the **Training Grounds**, recruit!  
+</tw-passagedata><tw-passagedata pid="2" name="Tutorial" tags="" position="900,1200" size="100,100">Welcome to the **Training Grounds**, recruit!  
 I&#39;m **Captain Featherbane** of the Hearthcrest Guard!
 Before facing real danger, you must learn the basics of combat.  
 
@@ -138,7 +135,7 @@ You peck the (print: $enemy&#39;s &quot;name&quot;) for (print: _playerDmg) dama
     You’re out of potions! 😣
 ]
 [[Back to battle|TutorialBattle]]
-</tw-passagedata><tw-passagedata pid="7" name="Credits" tags="" position="625,1325" size="100,100">Credits
+</tw-passagedata><tw-passagedata pid="7" name="Credits" tags="" position="600,1400" size="100,100">Credits
 
 Code by
 Beakerton Honkcrest
@@ -159,17 +156,12 @@ Any resemblance to real birds, living or dead, is purely coincidental (but deepl
 
 Made with 0% microtransactions.
 Powered by pure goose.
-[[Intro]]</tw-passagedata><tw-passagedata pid="8" name="SetName" tags="" position="525,1200" size="100,100">(text-colour:red)[&#39;&#39;This game is in development!&#39;&#39;]
-(text-colour:red)[&#39;&#39;Please send any errors to ufolover548836@gmail.com along with how to recreate the issue. &lt;br&gt;Thanks!&#39;&#39;]
-
-Goose RPG Demo
-By Quackle Studios
-
+[[Main Menu|Menu]]</tw-passagedata><tw-passagedata pid="8" name="SetName" tags="" position="500,1200" size="100,100">Your name is:
 (input: bind $name)
 (Default name is Quackle)
 [[Start|Intro]]
 &lt;!--Battle Variables--&gt;
-(set: $level to 1000)\
+(set: $level to 1)\
 (set: $maxHP to 80 + ($level * 20))\
 (set: $hp to $maxHP)\
 (set: $potions to 1000)\
@@ -218,6 +210,7 @@ By Quackle Studios
 (set: $xpToNext to 100 * $level)\
 &lt;!--Non Story Variables--&gt;
 (set:$header to false)
+(set:$footer to false)
 (set:$EndlessDungeonComp to false)
 &lt;!--Story Variables--&gt;
 (set:$hasMarketUpgrade to false)
@@ -291,30 +284,30 @@ You whack the (print: $enemy&#39;s &quot;name&quot;) with your (print: $weapon&#
 (set: $weapon&#39;s atk to (num:$weapon&#39;s atk))
 (set: $armor&#39;s def to (num:$armor&#39;s def))
 (set: $enemy&#39;s atk to (num:$enemy&#39;s atk))
-(set: $enemy&#39;s hp to (num:$enemy&#39;s hp))</tw-passagedata><tw-passagedata pid="16" name="Act 1" tags="" position="1400,800" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="Hearthcrest - Barracks" tags="" position="1500,1200" size="100,100">The **Army Barracks** smells faintly of steel and straw. Rows of cots and weapon racks line the walls, and a training dummy leans in the corner, worn from countless hits.  
+(set: $enemy&#39;s hp to (num:$enemy&#39;s hp))</tw-passagedata><tw-passagedata pid="16" name="Act 1" tags="" position="1400,800" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="Hearthcrest - Barracks" tags="" position="1500,1200" size="100,100">(set:$footer to false)\
+The **Army Barracks** smells faintly of steel and straw. Rows of cots and weapon racks line the walls, and a training dummy leans in the corner, worn from countless hits.  
 A large **war banner** hangs above the doorway, its golden feathers catching the morning light.
 
-(if: $urgentQuest is true and $urgentQuestComp is not true)[
+(if: $urgentQuest is true and $urgentQuestComp is not true)[\
     The barracks is unusually quiet. Even the soldiers move with hushed steps.  
     Captain Featherbane approaches quickly. &quot;$name,&quot; he honks, &quot;there’s a pressing matter you must handle — report to the planning room for details.&quot;  
     [[Accept the urgent mission|UrgentMission - Intro 1]]
-](else-if: $A1Boss is true)[
+](else-if: $A1Boss is true)[\
     The barracks is unusually quiet. Even the soldiers move with hushed steps.  
     Captain Featherbane approaches quickly. &quot;$name,&quot; he honks, &quot;we&#39;ve discovered the location of the Dark Flight camp. Hearthcrest depends on you to strike it down.&quot; 
     [[Head to the Camp|A1Boss - Intro1]]
-    [[Grab gear in Hearthcrest|Hearthcrest - Square]]
     (set:$A1Boss to false)\
     (set:$A1BossFound to true)\
-]
+]\
 (else:)[
     Soldiers march and drill, the usual hum of the barracks filling the air.  
     Captain Featherbane nods as you check your gear.  
+    ---
+[[Check gear|InspectGear]]
+[[Visit the Armory|Armory]]
+[[Head to the Planning Room|PlanningRoom]]
+[[Leave Barracks|Hearthcrest - Square]]
 
----
-    [[Check gear|InspectGear]]
-    [[Visit the Armory|Armory]]
-    [[Head to the Planning Room|PlanningRoom]]
-    [[Leave Barracks|Hearthcrest - Square]]
 ]
 </tw-passagedata><tw-passagedata pid="18" name="InspectGear" tags="" position="1600,1200" size="100,100">You take a moment to review your equipment and condition.  
 The reflection of your steel feathers glints faintly in the torchlight.
@@ -339,29 +332,30 @@ The reflection of your steel feathers glints faintly in the torchlight.
 
 ---
 [[Back|Hearthcrest - Barracks]]
-</tw-passagedata><tw-passagedata pid="19" name="Hearthcrest - Square" tags="" position="2000,1500" size="100,100">(if:$defeatedByA1Boss is true)[(set:$potions to $potionMem)(set:$defeatedByA1Boss to false)]\
-The heart of **Hearthcrest** beats here. Lanterns hang from the tall arches, and soldiers march past merchants in tidy rows. The air smells faintly of oil, steel, and roasted grain. A fountain bubbles softly near the center.
-(if: $honor &gt;= 50)[
+</tw-passagedata><tw-passagedata pid="19" name="Hearthcrest - Square" tags="" position="2000,1500" size="100,100">(set:$footer to true)\
+(if:$defeatedByA1Boss is true)[(set:$potions to $potionMem)(set:$defeatedByA1Boss to false)]\
+The heart of **Hearthcrest** beats here. Lanterns hang from the tall arches, and soldiers march past merchants in tidy rows. The air smells faintly of oil, steel, and roasted grain. A fountain bubbles softly near the center.&lt;br&gt;
+(if: $honor &gt;= 50)[\
     The city feels lighter as you walk through — a few nods of respect follow you, and you catch whispers of *“$name, the steadfast.”*  
     Even Captain Featherbane seems less stern when your name comes up. The people trust you; they’ve seen what you stand for.  
-]
-(else-if: $honor &lt;= 0)[
+]\
+(else-if: $honor &lt;= 0)[\
     Eyes follow you as you cross the square. The air feels heavier here — not fear, exactly, but unease.  
     Word travels fast, and some wonder if your loyalty lies closer to the Dark Flight than Hearthcrest.  
     Captain Featherbane stands by the fountain, unreadable. “Efficient, $name. As always.” 
-]
-(else:)[
+]\
+(else:)[\
     Hearthcrest carries on as usual. You blend into the motion — one soldier among many.  
     Captain Featherbane gives a nod of acknowledgment, and the crowd moves around you without fuss or fear.  
-]
+]\
 
 ---
 [[Visit the Market Stalls|Hearthcrest - Market]]
 [[Report to the Barracks|Hearthcrest - Barracks]]
 [[Rest at the Inn|Hearthcrest - Inn]]
 [[Explore Hearthwood Forest|ExploreForest]]
-(if:$foundEndlessDungeon is true and $endlessDungeonComp is not true)[[[Explore the Endless Dungeon|Dungeon - Entrance (not released yet)]]]
-(if:$A1BossFound is true)[[[Head to the Dark Flight camp|A1Boss - Intro1]]]
+(if:$foundEndlessDungeon is true and $endlessDungeonComp is not true)[[[Explore the Endless Dungeon|Dungeon - Entrance]]&lt;br&gt;]\
+(if:$A1BossFound is true)[[[Head to the Dark Flight camp|A1Boss - Intro1]]&lt;br&gt;]\
 (if:$level &gt;=3 and $urgentQuestComp is not true)[(set:$urgentQuest to true)]
 (if:$level &gt;=5 and $urgentQuestComp is true and $A1BossFound is not true)[(set:$A1Boss to true)]
 </tw-passagedata><tw-passagedata pid="20" name="UrgentMission - Intro 1" tags="" position="1500,1300" size="100,100">Captain Featherbane lowers his voice. &quot;$name, listen carefully. A Dark Flight camp has been spotted in the forest outskirts.  
@@ -435,10 +429,10 @@ Humanity — or whatever’s left of it — fading fast.
      (display:&quot;BattleFinishScript&quot;)
     (link-goto:$afterBattle&#39;s &quot;text&quot;,$afterBattle&#39;s &quot;destination&quot;)
 ]\
-(else-if: $hp &lt;= 0)[
+(else-if: $hp &lt;= 0)[\
 	You died
     [[Restart|SetName]]
-]
+]\
 (else:)[\
 **Enemy:** (print: $enemy&#39;s &quot;name&quot;) — HP: (print: $enemy&#39;s &quot;hp&quot;)  
 **You:** HP (print: $hp) / (print: $maxHP)  
@@ -452,14 +446,14 @@ Choose an action:
 </tw-passagedata><tw-passagedata pid="27" name="Battle - Attack" tags="" position="1500,2800" size="100,100">(set: _playerDmg to (random:(round:(1.5*$weapon&#39;s &quot;atk&quot;)),(round:(0.75*$weapon&#39;s &quot;atk&quot;))))\
 (set: $enemy&#39;s &quot;hp&quot; to (max:0,$enemy&#39;s &quot;hp&quot;-_playerDmg))\
 You slash the (print: $enemy&#39;s &quot;name&quot;) with your (print: $weapon&#39;s &quot;name&quot;) for (print: _playerDmg) damage! (if:_playerDmg &gt;= 1.4*$weapon&#39;s &quot;atk&quot;)[Critical hit!]
-(if: $weapon&#39;s id is 5)[(set:_heal to (random:(round:($maxHP/10)),(round:($maxHP/100))))(set:_heal to (min:$hp+_heal,$maxHP))Your (print:$weapon&#39;s name) healed you by _heal.&lt;br&gt;]\
+(if: $weapon&#39;s id is 5)[&lt;br&gt;(set:_heal to (random:(round:($maxHP/10)),(round:($maxHP/100))))(set:$hp to (min:$hp+_heal,$maxHP))Your (print:$weapon&#39;s name) glowed with light! You were healed by _heal.&lt;br&gt;]\
 \
-(if: $weapon&#39;s id is 6)[(print:&quot;Reality bends — one strike becomes two.&quot;)(print:&quot;Your shadow slashes the &quot;+ (print: $enemy&#39;s name)+ &quot; for &quot;+ (str:_playerDmg/2)+ &quot; damage&quot;)&lt;br&gt;]\
+(if: $weapon&#39;s id is 6)[(print:&quot;Reality bends — one strike becomes two.&quot;)&lt;br&gt;(print:&quot;Your shadow slashes the &quot;+$enemy&#39;s name +&quot; for &quot;+ (str:(round:_playerDmg/2))+ &quot; damage&quot;)(set: $enemy&#39;s &quot;hp&quot; to (max:0,$enemy&#39;s &quot;hp&quot;-(round:_playerDmg/2)))&lt;br&gt;]\
 \
-(if: $enemy&#39;s &quot;hp&quot; &gt; 0)[
+(if: $enemy&#39;s &quot;hp&quot; &gt; 0)[\
     (set: _enemyDmg to (max: 1, (random:(round:($enemy&#39;s &quot;atk&quot;*1.2)),(round:($enemy&#39;s &quot;atk&quot;*0.75)) - $armor&#39;s &quot;def&quot;)))\
     (set: $hp to (max: 0, $hp - _enemyDmg))\
-    (if: _enemyDmg &gt; 1)[The (print: $enemy&#39;s &quot;name&quot;) hits you for (print: _enemyDmg) damage!](else:)[The (print: $enemy&#39;s &quot;name&quot;)&#39;s attack scratches your  (print: $armor&#39;s &quot;name&quot;) for (print:_enemyDmg) damage.]
+    (if: _enemyDmg &gt; 1)[The (print: $enemy&#39;s &quot;name&quot;) hits you for (print: _enemyDmg) damage!](else:)[The (print: $enemy&#39;s &quot;name&quot;)&#39;s attack scratches your  (print: $armor&#39;s &quot;name&quot;) for (print:_enemyDmg) damage.&lt;br&gt;&lt;br&gt;]\
 ]
 [[Continue|Battle - Main]]
 </tw-passagedata><tw-passagedata pid="28" name="Battle - Potion" tags="" position="1600,2700" size="100,100">(if: $potions &gt; 0)[
@@ -471,7 +465,7 @@ You slash the (print: $enemy&#39;s &quot;name&quot;) with your (print: $weapon&#
 ]
 (else:)[
     You’re out of potions! 😣
-]
+]\
 [[Back to battle|Battle - Main]]
 </tw-passagedata><tw-passagedata pid="29" name="UrgentMission - GoodEnding" tags="" position="1425,1825" size="100,100">The **Dark Flight Guard** collapses to the ground with a startled honk.  
 You quickly untie the villager, who flutters and honks in relief. &quot;Thank you! I thought I’d never get out of there!&quot;  
@@ -499,7 +493,8 @@ He acknowledges you with a curt nod. “At ease, $name. We’re reviewing border
 [[Speak with Captain Featherbane|FeatherbaneBriefing]]  
 [[Check the Mission Board|MissionBoard]]  
 [[Return to Barracks|Hearthcrest - Barracks]]
-</tw-passagedata><tw-passagedata pid="32" name="Hearthcrest - Market" tags="" position="2200,1300" size="100,100">The **Hearthcrest Market** hums with noise and color — stalls piled with gear, enchanted herbs, and steel tools for the army.  
+</tw-passagedata><tw-passagedata pid="32" name="Hearthcrest - Market" tags="" position="2200,1300" size="100,100">(set:$footer to false)\
+The **Hearthcrest Market** hums with noise and color — stalls piled with gear, enchanted herbs, and steel tools for the army.  
 Vendors shout over each other, waving gleaming goods in your direction.
 
 (if: $honor &gt;= 50)[
@@ -528,7 +523,8 @@ Vendors shout over each other, waving gleaming goods in your direction.
 
 **Actions:**  
 • [[Visit the Potion Stall|PotionShop]]  
-• [[Return to Hearthcrest Square|Hearthcrest - Square]]</tw-passagedata><tw-passagedata pid="33" name="Hearthcrest - Inn" tags="" position="2000,1150" size="100,100">The **Hearthcrest Inn** stands warm and inviting — a sturdy timber building with lanterns glowing softly through the evening mist.  
+• [[Return to Hearthcrest Square|Hearthcrest - Square]]</tw-passagedata><tw-passagedata pid="33" name="Hearthcrest - Inn" tags="" position="2000,1150" size="100,100">(set:$footer to false)\
+The **Hearthcrest Inn** stands warm and inviting — a sturdy timber building with lanterns glowing softly through the evening mist.  
 Inside, the air smells faintly of hay and herbal tea. Geese chatter quietly around tables, resting after long days in service.
 
 The innkeeper gives you a polite nod. “Rooms are 15 gold per night. Warm bed, fresh water, and a bit of peace.”
@@ -542,19 +538,19 @@ You have **(print: $gold)** gold.
 
 </tw-passagedata><tw-passagedata pid="34" name="Header" tags="header" position="1100,2700" size="100,100">(if: $header is true)[
 |====
-HP: 
+(text-colour:red)[**HP: **]
 $hp/$maxHP
 =|===
-Honor: 
+(text-colour:yellow)[**Honor: **]
 $honor
 ==|==
-Gold: 
+(text-colour:orange)[**Gold: **]
 $gold
 ===|=
-Level: 
+(link-repeat:&quot;Level&quot;)[(set: $clicks to $clicks + 1)(if:$clicks is 5)[(set: $weapon to (dm: &quot;name&quot;, &quot;Featherlight Katana&quot;, &quot;atk&quot;, 30,&quot;id&quot;,5))(set:$unlockedWeapon&#39;s id5 to true)(set:$unlockedArmor&#39;s id3 to true)(set: $armor to (dm:&quot;name&quot;,&quot;Guardian&#39;s Aegis&quot;,&quot;def&quot;,15,&quot;id&quot;,3))(set:$level to 10)(set:$gold to 1000)(set:$foundEndlessDungeon to true)]]
 $level
 ====|
-XP: 
+(text-colour:green)[**XP: **]
 $xp/$xpToNext
 |=======|
 ---
@@ -601,8 +597,8 @@ You have **(print: $potions)** potion(s).
 (else:)[
     You don’t have enough gold.  
     [[Back to Potion Stall|PotionShop]]
-]</tw-passagedata><tw-passagedata pid="39" name="RestAtInn" tags="" position="1900,1150" size="100,100">(set: $gold to $gold - 15)  
-    (set: $hp to $maxHP)  
+]</tw-passagedata><tw-passagedata pid="39" name="RestAtInn" tags="" position="1900,1150" size="100,100">(set: $gold to $gold - 15)  \
+    (set: $hp to $maxHP)  \
     You pay the innkeeper and settle into a soft nest of straw.  
     The warmth of the hearth and the distant hum of the city lull you to sleep...  
 
@@ -625,7 +621,8 @@ A handwritten notice catches your eye:
 
 Looks like no new missions are posted yet.
 
-[[Back|PlanningRoom]]</tw-passagedata><tw-passagedata pid="42" name="ExploreForest" tags="" position="2400,1600" size="100,100">(set: $roll to (random: 1, 100))\
+[[Back|PlanningRoom]]</tw-passagedata><tw-passagedata pid="42" name="ExploreForest" tags="" position="2400,1600" size="100,100">(set:$footer to false)\
+(set: $roll to (random: 1, 100))\
 You wander deeper into Hearthwood Forest, the wind rustling through the tall grass and distant caws echoing overhead.  
 Your instincts sharpen as the shadows shift between the trees...
 (if: $roll &lt;= 35)[
@@ -671,7 +668,7 @@ Your instincts sharpen as the shadows shift between the trees...
         The reflection in the water smirks back at you — proud, unrepentant.  
         You feel stronger for it, though something inside darkens.  
         (set: $honor to $honor - 5)\
-    ]
+    ]\
     [[Return to Hearthcrest|Hearthcrest - Square]]
     [[Explore|ExploreForest]]
 ]\
@@ -679,7 +676,7 @@ Your instincts sharpen as the shadows shift between the trees...
     A faint honk echoes from somewhere distant.  
     The forest grows eerily silent… but nothing happens.  
     You get the sense something *watched* you.  
-    (set: $xp to $xp + 20)\
+    (set: $xp to $xp + 250)\
     [[Return to Hearthcrest|Hearthcrest - Square]]
     [[Explore|ExploreForest]]
 ]\
@@ -726,41 +723,17 @@ Your instincts sharpen as the shadows shift between the trees...
     Inside, steps lead down into darkness…  
     You’ve found the entrance to the **Endless Dungeon** — a place whispered about in legend.  
     (set:$foundEndlessDungeon to true)\
-    [[Enter the Dungeon|Dungeon - Entrance (not released yet)]]  
+    [[Enter the Dungeon|Dungeon - Entrance]]  
     [[Leave for Now|Hearthcrest - Square]]
     [[Explore|ExploreForest]]
 ]\
 (else-if: $roll is 100 and $foundEndlessDungeon is true)[
 You stumble upon another entrance to the Endless Dungeon.
-[[Enter the Dungeon|Dungeon - Entrance (not released yet)]]  
+[[Enter the Dungeon|Dungeon - Entrance]]  
     [[Leave for Now|Hearthcrest - Square]]
     [[Explore|ExploreForest]]
 ]\
-</tw-passagedata><tw-passagedata pid="43" name="Dungeon - Entrance" tags="" position="1875,1700" size="100,100">You stand before the mouth of the Endless Dungeon —  
-a stone archway that seems to swallow the light around it.  
-Wind rushes upward from below, cold and endless.
-
-Some say no one reaches the bottom.  
-Some say there *is* no bottom.
-
----
-(if: $endlessDungeonComp is true)[\
-	&lt;br&gt;The gate lies inert.  
-	Whatever power once breathed beneath these stones has gone silent forever.
-
-	&lt;span style=&quot;opacity:60%&quot;&gt;You cannot enter again.&lt;/span&gt;&lt;br&gt;
-
-	[[Return to Hearthcrest|Hearthcrest - Square]]
-]\
-\
-(else:)[\
-	The darkness waits — patient, ancient, hungry.&lt;br&gt;
-	Do you step inside?
-
-	[[Enter the Endless Dungeon|Dungeon - Main]]
-	[[Back to Hearthcrest|Hearthcrest - Square]]
-]\
-\</tw-passagedata><tw-passagedata pid="44" name="BuyDarkflightGear" tags="" position="2475,1350" size="100,100">(if: $gold &gt;= 100)[
+</tw-passagedata><tw-passagedata pid="43" name="BuyDarkflightGear" tags="" position="2475,1350" size="100,100">(if: $gold &gt;= 100)[
     (set: $gold to $gold - 100)\
     (set: $weapon to (dm: &quot;name&quot;, &quot;Rogue Talon Blade&quot;, &quot;atk&quot;, 30,&quot;id&quot;,4))\
     (set: $unlockedWeapon&#39;s id4 to true)\
@@ -776,8 +749,8 @@ Some say there *is* no bottom.
     The shopkeeper shakes his head. “No credit here, goose.”  
     [[Return to Potion Shop|PotionShop]]
 ]
-</tw-passagedata><tw-passagedata pid="45" name="A1Boss - Intro2 (multiphase)" tags="" position="2900,1525" size="100,100">(set: $potionMem to $potions)\
-(set: $enemyP1 to (dm:&quot;name&quot;, &quot;Duskbeak&quot;,&quot;hp&quot;, 1000,&quot;atk&quot;, 40,&quot;xp&quot;, 1000,&quot;gold&quot;, 1500))\
+</tw-passagedata><tw-passagedata pid="44" name="A1Boss - Intro2 (multiphase)" tags="" position="2900,1500" size="100,100">(set: $potionMem to $potions)\
+(set: $enemyP1 to (dm:&quot;name&quot;, &quot;Duskbeak&quot;,&quot;hp&quot;, 4000,&quot;atk&quot;, 40,&quot;xp&quot;, 1000,&quot;gold&quot;, 1500))\
 (set: $kb to 0)\
 (set: $kbMax to 100)\
 The moment you burst through the front line of tents, a **shadow streaks overhead**.
@@ -804,7 +777,7 @@ Duskbeak smirks.
 
 &gt; “Come, then. Show me how far you can shove before you fall.”
 
-[[Begin Phase 1|A1BossP1 - Main]]</tw-passagedata><tw-passagedata pid="46" name="A1Boss - After1" tags="" position="2475,2325" size="100,100">The last blow sends Duskbeak to his knees.  
+[[Begin Phase 1|A1BossP1 - Main]]</tw-passagedata><tw-passagedata pid="45" name="A1Boss - After1" tags="" position="2475,2325" size="100,100">The last blow sends Duskbeak to his knees.  
 Ash drifts between you — snow made of fire.  
 Behind him, the cliff’s edge waits, a chasm of mist and thunder far below.  
 
@@ -856,7 +829,7 @@ Duskbeak’s eyes narrow, but he salutes before stepping backward — over the e
 (set: $xp to $xp + 200)  
 (set: $gold to $gold + 75)  
 ]
-[[Next|A1Boss - After2]]</tw-passagedata><tw-passagedata pid="47" name="A1Boss - Main" tags="" position="2175,2500" size="100,100">(if: $enemy&#39;s &quot;hp&quot; &lt;= 0)[
+[[Next|A1Boss - After2]]</tw-passagedata><tw-passagedata pid="46" name="A1Boss - Main" tags="" position="2175,2500" size="100,100">(if: $enemy&#39;s &quot;hp&quot; &lt;= 0)[
     [[After the Battle|A1Boss - After1]]
 ]
 (else-if: $hp &lt;= 0)[
@@ -874,7 +847,7 @@ Duskbeak’s eyes narrow, but he salutes before stepping backward — over the e
 [[Attack|A1Boss - Attack]]  
 [[Use Potion|A1Boss - Potion]]
 ]
-</tw-passagedata><tw-passagedata pid="48" name="A1Boss - Attack" tags="" position="2050,2350" size="100,100">(set: _playerDmg to (random:(round:(1.5*$weapon&#39;s &quot;atk&quot;)),(round:(0.75*$weapon&#39;s &quot;atk&quot;))))\
+</tw-passagedata><tw-passagedata pid="47" name="A1Boss - Attack" tags="" position="2050,2350" size="100,100">(set: _playerDmg to (random:(round:(1.5*$weapon&#39;s &quot;atk&quot;)),(round:(0.75*$weapon&#39;s &quot;atk&quot;))))\
 (set: $enemy&#39;s &quot;hp&quot; to (max:0,$enemy&#39;s &quot;hp&quot;-_playerDmg))\
 You slash the (print: $enemy&#39;s &quot;name&quot;) with your (print: $weapon&#39;s &quot;name&quot;) for (print: _playerDmg) damage! (if:_playerDmg &gt;= 1.4*$weapon&#39;s &quot;atk&quot;)[Critical hit!]
 (if: $weapon&#39;s id is 5)[(&lt;br&gt;set:_heal to (random:(round:$maxHP/10),(round:$maxHP/100)))(set:_heal to (min:$hp+_heal,$maxHP))Your (print:$weapon&#39;s name) healed you by _heal.&lt;br&gt;]\
@@ -883,7 +856,7 @@ You slash the (print: $enemy&#39;s &quot;name&quot;) with your (print: $weapon&#
     (set: $hp to (max: 0, $hp - _enemyDmg))\
     (if: _enemyDmg &gt; 1)[The (print: $enemy&#39;s &quot;name&quot;) hits you for (print: _enemyDmg) damage!](else:)[(print: $enemy&#39;s &quot;name&quot;)&#39;s attack scratches your  (print: $armor&#39;s &quot;name&quot;) for (print:_enemyDmg) damage.]
 ]
-[[Continue|A1Boss - Main]]</tw-passagedata><tw-passagedata pid="49" name="A1Boss - Potion" tags="" position="2150,2350" size="100,100">(if: $potions &gt; 0)[
+[[Continue|A1Boss - Main]]</tw-passagedata><tw-passagedata pid="48" name="A1Boss - Potion" tags="" position="2150,2350" size="100,100">(if: $potions &gt; 0)[
     (set: $potions to $potions - 1)\
     (set: $hp to $maxHP)\
     You drink a potion, and a wave of magic surges through your feathers.  
@@ -893,7 +866,7 @@ You slash the (print: $enemy&#39;s &quot;name&quot;) with your (print: $weapon&#
     There’s nothing left to heal you.  
 ]
 [[Back to battle|A1Boss - Main]]
-</tw-passagedata><tw-passagedata pid="50" name="A1Boss - Intro1" tags="" position="2800,1300" size="100,100">(set: $hp to $maxHP)\
+</tw-passagedata><tw-passagedata pid="49" name="A1Boss - Intro1" tags="" position="2800,1300" size="100,100">(set: $hp to $maxHP)\
 (set: $potionMem to $potions)\
 The forest thickens, shadows pooling beneath gnarled branches.  
 Ahead, the Dark Flight camp sprawls across a clearing, tents blackened and smoke curling into the sky.  
@@ -905,7 +878,7 @@ The sound of frantic quacks echoes from the tents. Soldiers scatter, sensing the
 
 [[Scout the perimeter first|A1Boss - Scout]]  
 [[Charge into the camp|A1Boss - Intro2 (multiphase)]]
-[[Return to Hearthcrest|Hearthcrest - Square]]</tw-passagedata><tw-passagedata pid="51" name="A1Boss - Scout" tags="" position="2900,1300" size="100,100">You glide silently along the treeline, talons tucked, feathers ruffling in the wind.  
+[[Return to Hearthcrest|Hearthcrest - Square]]</tw-passagedata><tw-passagedata pid="50" name="A1Boss - Scout" tags="" position="2900,1300" size="100,100">You glide silently along the treeline, talons tucked, feathers ruffling in the wind.  
 From this vantage, the camp is fully visible: tents blackened, soldiers panicked, and a single, ominous figure — **Commander Duskbeak** — pacing atop a crate.  
 
 You notice weak points: a side tent with scattered supplies, a partially collapsed barricade, and a small stack of unused firepots.  
@@ -916,7 +889,7 @@ The camp seems vulnerable… but Commander Duskbeak’s eyes are sharp, scanning
 
 [[Return to the approach and decide|A1Boss - Intro1]]  
 [[Attack the camp directly|A1Boss - Intro2 (multiphase)]]
-</tw-passagedata><tw-passagedata pid="52" name="A1Boss - After2" tags="" position="2475,2425" size="100,100">(set:$header to false)
+</tw-passagedata><tw-passagedata pid="51" name="A1Boss - After2" tags="" position="2475,2425" size="100,100">(set:$header to false)
 The battlefield is quiet. Smoke curls into the sky, the acrid scent of charred tents and feathers heavy in the air.  
 The Dark Flight camp lies in ruins, a testament to your skill… and the choices you made.
 
@@ -954,7 +927,7 @@ Smoke rises in the distance, mingling with the twilight sky.
 The first act of your journey has ended.  
 
 [[Credits]]
-</tw-passagedata><tw-passagedata pid="53" name="Act 2" tags="" position="3600,800" size="100,100"></tw-passagedata><tw-passagedata pid="54" name="A2 - HomeArrival" tags="" position="3400,1200" size="100,100">The road back to the river runs quiet beneath a cloudy dusk sky.  
+</tw-passagedata><tw-passagedata pid="52" name="Act 2" tags="" position="3600,800" size="100,100"></tw-passagedata><tw-passagedata pid="53" name="A2 - HomeArrival" tags="" position="3400,1200" size="100,100">The road back to the river runs quiet beneath a cloudy dusk sky.  
 You clutch the letter Featherbane gave you — the ink still faintly scented with wax and cedar.  
 When you arrive, the **house** is smaller than you expected… but warm. The shutters are freshly painted, the hearth already stocked with wood, and the faint scent of lavender drifts from the garden.  
 
@@ -971,7 +944,7 @@ Outside, the rain begins to fall softly. The kind that lulls weary soldiers to s
 It feels almost too peaceful.  
 
 [[Rest for the night|A2 - Nightfall]]
-[[Step outside for some air|A2 - Riverside]]</tw-passagedata><tw-passagedata pid="55" name="A2 - Intro" tags="" position="3300,1200" size="100,100">The **barracks** are unusually quiet. Even the soldiers seem to move with a kind of reverence — their voices low, their steps soft.  
+[[Step outside for some air|A2 - Riverside]]</tw-passagedata><tw-passagedata pid="54" name="A2 - Intro" tags="" position="3300,1200" size="100,100">The **barracks** are unusually quiet. Even the soldiers seem to move with a kind of reverence — their voices low, their steps soft.  
 
 After the victory at the Dark Flight encampment, a calm has settled over Hearthcrest.  
 For the first time in weeks, the air doesn’t smell of smoke and steel.  
@@ -996,11 +969,17 @@ Featherbane stands. His tone softens.
 He leaves with a weary smile, his steps echoing on the old wooden floorboards.  
 Outside, thunder rolls in the distance — faint, but growing closer.
 
-[[Leave the Inn and head home|A2 - HomeArrival]]</tw-passagedata><tw-passagedata pid="56" name="A2 - Nightfall" tags="" position="3337.5,1325" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="A2 - Riverside" tags="" position="3462.5,1325" size="100,100"></tw-passagedata><tw-passagedata pid="58" name="A1BossP1 - Main" tags="" position="2950,1700" size="100,100">(if: $enemyP1&#39;s &quot;hp&quot; &lt;= 500)[
-    [[Phase Transition|A1BossP2 - IntroAtk]]
-]
-(else-if: $hp &lt;= 0)[
-    (set: $defeatedByA1Boss to true)
+[[Leave the Inn and head home|A2 - HomeArrival]]</tw-passagedata><tw-passagedata pid="55" name="A2 - Nightfall" tags="" position="3337.5,1325" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="A2 - Riverside" tags="" position="3462.5,1325" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="A1BossP1 - Main" tags="" position="2950,1700" size="100,100">(if: $enemyP1&#39;s &quot;hp&quot; &lt;= 2000)[\
+    You tighten your grip on your weapon, eyes locked on Duskbeak.  
+No tricks, no diversions — just a straight assault.  
+
+The cliff edge yawns behind him, the wind whistling through the trees.  
+Every strike could decide the fate of this battle.  
+
+[[Begin the Attack|A1BossP2 - Intro2]]
+]\
+(else-if: $hp &lt;= 0)[\
+    (set: $defeatedByA1Boss to true)\
     &quot;You collapse in the dirt as Duskbeak towers over you.
 
     His low, rasping laugh cuts through the darkness:
@@ -1008,10 +987,10 @@ Outside, thunder rolls in the distance — faint, but growing closer.
 
     Your vision fades...&quot;
     [[Return to Hearthcrest|Hearthcrest - Square]]
-]
-(else:)[
+]\
+(else:)[\
 **DUSKBEAK — Phase 1**  
-**HP:** (print: $enemyP1&#39;s &quot;hp&quot;) / 1000
+**HP:** (print: $enemyP1&#39;s &quot;hp&quot;) / 4000
 **Knockback:** (print: $kb) / (print: $kbMax)  
 **You:** HP (print: $hp) / (print: $maxHP)  
 **Potions:** (print: $potions)
@@ -1030,32 +1009,25 @@ Choose your move:
 • [[Knockback Strike|A1BossP1 - KB]]  
 • [[Use Potion|A1BossP1 - Potion]]
 ]
-</tw-passagedata><tw-passagedata pid="59" name="A1BossP2 - IntroAtk" tags="" position="2900,2100" size="100,100">You tighten your grip on your weapon, eyes locked on Duskbeak.  
-No tricks, no diversions — just a straight assault.  
-
-The cliff edge yawns behind him, the wind whistling through the trees.  
-Every strike could decide the fate of this battle.  
-
-[[Begin the Attack|A1BossP2 - Intro2]]</tw-passagedata><tw-passagedata pid="60" name="A1BossP1 - Attack" tags="" position="2825,1900" size="100,100">(set: _playerDmg to (random:(round:(1.5*$weapon&#39;s &quot;atk&quot;)),(round:(0.8*$weapon&#39;s &quot;atk&quot;))))\
+</tw-passagedata><tw-passagedata pid="58" name="A1BossP1 - Attack" tags="" position="2825,1900" size="100,100">(set: _playerDmg to (random:(round:(5*$weapon&#39;s &quot;atk&quot;)),(round:(1*$weapon&#39;s &quot;atk&quot;))))\
 (set: $enemyP1&#39;s &quot;hp&quot; to (max:0, $enemyP1&#39;s &quot;hp&quot; - _playerDmg))\
 You slash Duskbeak with your (print: $weapon&#39;s &quot;name&quot;) for (print: _playerDmg) damage!
-(if:_playerDmg &gt;= 1.4*$weapon&#39;s &quot;atk&quot;)[Critical hit!]
-(if: $weapon&#39;s id is 5)[(set:_heal to (random:(round:($maxHP/10)),(round:($maxHP/100))))(set:_heal to (min:$hp+_heal,$maxHP))Your (print:$weapon&#39;s name) healed you by _heal.&lt;br&gt;]\
+(if:_playerDmg &gt;= 4.7*$weapon&#39;s &quot;atk&quot;)[Critical hit!]
+(if: $weapon&#39;s id is 5)[&lt;br&gt;(set:_heal to (random:(round:($maxHP/10)),(round:($maxHP/100))))(set:$hp to (min:$hp+_heal,$maxHP))Your (print:$weapon&#39;s name) glowed with light! You were healed by _heal.&lt;br&gt;]\
 \
-(if: $weapon&#39;s id is 6)[(print:&quot;Reality bends — one strike becomes two.&quot;)(print:&quot;Your shadow slashes Duskbeak for &quot;+ (str:_playerDmg/2)+ &quot; damage&quot;)&lt;br&gt;]\
+(if: $weapon&#39;s id is 6)[(print:&quot;Reality bends — one strike becomes two.&quot;)&lt;br&gt;(print:&quot;Your shadow slashes Duskbeak for &quot;+ (str:(round:_playerDmg/2))+ &quot; damage&quot;)(set: $enemyP1&#39;s &quot;hp&quot; to (max:0,$enemyP1&#39;s &quot;hp&quot;-(round:_playerDmg/2)))&lt;br&gt;]\
 \
-(if: $enemyP1&#39;s &quot;hp&quot; &gt; 0)[
-    (set: _enemyDmg to (max: 1, (random:(round:($enemyP1&#39;s &quot;atk&quot;*1.2)),(round:($enemyP1&#39;s &quot;atk&quot;*0.7))) - $armor&#39;s &quot;def&quot;))
-    (set: $hp to (max:0, $hp - _enemyDmg))
+(if: $enemyP1&#39;s &quot;hp&quot; &gt; 0)[\
+    (set: _enemyDmg to (max: 1, (random:(round:($enemyP1&#39;s &quot;atk&quot;*1.2)),(round:($enemyP1&#39;s &quot;atk&quot;*0.7))) - $armor&#39;s &quot;def&quot;))\
+    (set: $hp to (max:0, $hp - _enemyDmg))\
 
-    (if:_enemyDmg &gt; 1)[
+    (if:_enemyDmg &gt; 1)[\
         Duskbeak strikes you with a sweeping talon for (print:_enemyDmg) damage!
-    ](else:)[
+    ](else:)[\
         Duskbeak&#39;s wingbeat grazes your (print: $armor&#39;s &quot;name&quot;) — (print:_enemyDmg) damage.
     ]
 ]
-[[Back to Battle|A1BossP1 - Main]]
-	</tw-passagedata><tw-passagedata pid="61" name="A1BossP1 - KB" tags="" position="2950,1900" size="100,100">(set: _kbGain to (random:2,6))\
+[[Continue|A1BossP1 - Main]]</tw-passagedata><tw-passagedata pid="59" name="A1BossP1 - KB" tags="" position="2950,1900" size="100,100">(set: _kbGain to (random:2,6))\
 (set: $kb to (min:$kbMax, $kb + _kbGain))\
 You shove with all your might, forcing Duskbeak backward — **(print:_kbGain) Knockback gained!**  
 (if: $kb&gt;=100)[
@@ -1074,7 +1046,7 @@ You shove with all your might, forcing Duskbeak backward — **(print:_kbGain) K
 ]
 
 [[Back to Battle|A1BossP1 - Main]]
-]</tw-passagedata><tw-passagedata pid="62" name="A1BossP1 - Potion" tags="" position="3075,1900" size="100,100">(if: $potions &gt; 0)[
+]</tw-passagedata><tw-passagedata pid="60" name="A1BossP1 - Potion" tags="" position="3075,1900" size="100,100">(if: $potions &gt; 0)[
     (set: $potions to $potions - 1)\
     (set: $hp to $maxHP)\
     You drink a potion, and a wave of magic surges through your feathers.  
@@ -1085,29 +1057,30 @@ You shove with all your might, forcing Duskbeak backward — **(print:_kbGain) K
 ]\
 
 [[Back to Battle|A1BossP1 - Main]]
-</tw-passagedata><tw-passagedata pid="63" name="A1BossP2 - IntroKB" tags="" position="3000,2100" size="100,100">You step forward, spreading your wings for leverage.  
+</tw-passagedata><tw-passagedata pid="61" name="A1BossP2 - IntroKB" tags="" position="3000,2100" size="100,100">You step forward, spreading your wings for leverage.  
 This fight isn’t just about damage — it’s about forcing Duskbeak to the edge.  
 
 Every push, every shove could tip the scales. The cliff waits silently behind him.  
 
 [[Begin the Knockback Assault|A1BossP2 - Intro2]]
-</tw-passagedata><tw-passagedata pid="64" name="A1BossP2 - Intro2" tags="" position="2950,2225" size="100,100">The chaos of the camp is behind you, but the wind howls with warning.  
+</tw-passagedata><tw-passagedata pid="62" name="A1BossP2 - Intro2" tags="" position="2950,2225" size="100,100">The chaos of the camp is behind you, but the wind howls with warning.  
 Ahead, the cliff yawns wide, jagged rocks below. Duskbeak glares at you, wings bristling and talons digging into the dirt.  
 
 (set: $enemyP2 to (dm:&quot;name&quot;, &quot;Duskbeak&quot;,&quot;hp&quot;, $enemyP1&#39;s hp,&quot;atk&quot;, 50,&quot;xp&quot;, 1000,&quot;gold&quot;, 1500, &quot;kbThreshold&quot;, 100))\
 (set:$kb to 0)\
 [[Begin the Battle|A1BossP2 - Main]]
-</tw-passagedata><tw-passagedata pid="65" name="A1BossP2 - Main" tags="" position="2950,2350" size="100,100">(if: $enemyP2&#39;s &quot;hp&quot; &lt;= 0)[
+</tw-passagedata><tw-passagedata pid="63" name="A1BossP2 - Main" tags="" position="2950,2350" size="100,100">(if: $enemyP2&#39;s &quot;hp&quot; &lt;= 0)[\
     [[After the Battle|A1BossP2 - After]]
-]
-(else-if: $hp &lt;= 0)[
-    (set: $defeatedByA1Boss to true)
+]\
+(else-if: $hp &lt;= 0)[\
+    (set: $defeatedByA1Boss to true)\
+    (set: $hp to $maxHP)\
     &quot;You collapse near the cliff edge. Duskbeak’s mocking laugh echoes as the wind whips around you.&quot;
     [[Return to Hearthcrest|Hearthcrest - Square]]
-]
-(else:)[
+]\
+(else:)[\
 **Duskbeak — Phase 2**  
-HP: (print: $enemyP2&#39;s &quot;hp&quot;) / 1000
+HP: (print: $enemyP2&#39;s &quot;hp&quot;) / 4000
 Knockback: (print: $kb) / (print: $enemyP2&#39;s &quot;kbThreshold&quot;)  
 You: HP (print: $hp) / (print: $maxHP)  
 Potions: (print: $potions)
@@ -1123,7 +1096,7 @@ Potions: (print: $potions)
 [[Knockback Strike|A1Boss-Phase2-Knockback]]  
 [[Use Potion|A1Boss-Phase2-Potion]]
 ]
-</tw-passagedata><tw-passagedata pid="66" name="A1BossP2 - After" tags="" position="2800,2600" size="100,100">The wind settles. Duskbeak is gone, and the camp lies in ruin behind him.  
+</tw-passagedata><tw-passagedata pid="64" name="A1BossP2 - After" tags="" position="2800,2600" size="100,100">The wind settles. Duskbeak is gone, and the camp lies in ruin behind him.  
 
 (set: $xp to $xp + 500)\
 (set: $gold to $gold + 250)\
@@ -1143,72 +1116,75 @@ Smoke rises in the distance, mingling with the twilight sky.
 The first act of your journey has ended.  
 
 [[Credits|Credits]]
-</tw-passagedata><tw-passagedata pid="67" name="A1Boss-Phase2-Attack" tags="" position="2900,2475" size="100,100">(set: _playerDmg to (random:(round:(0.75*$weapon&#39;s &quot;atk&quot;)),(round:(1.5*$weapon&#39;s &quot;atk&quot;))))\
-(set: $enemyP2&#39;s &quot;hp&quot; to (max: 0, $enemyP2&#39;s &quot;hp&quot; - _playerDmg))\
-You slash at Duskbeak with your (print: $weapon&#39;s &quot;name&quot;) for (print: _playerDmg) damage! 
-(if: _playerDmg &gt;= 1.4*$weapon&#39;s &quot;atk&quot;)[Critical hit!]
-(if: $weapon&#39;s id is 5)[(set:_heal to (random:(round:($maxHP/10)),(round:($maxHP/100))))(set:_heal to (min:$hp+_heal,$maxHP))Your (print:$weapon&#39;s name) healed you by _heal.&lt;br&gt;]\
+</tw-passagedata><tw-passagedata pid="65" name="A1Boss-Phase2-Attack" tags="" position="2900,2475" size="100,100">(set: _playerDmg to (random:(round:(5*$weapon&#39;s &quot;atk&quot;)),(round:(1*$weapon&#39;s &quot;atk&quot;))))\
+(set: $enemyP2&#39;s &quot;hp&quot; to (max:0, $enemyP2&#39;s &quot;hp&quot; - _playerDmg))\
+You slash Duskbeak with your (print: $weapon&#39;s &quot;name&quot;) for (print: _playerDmg) damage!
+(if:_playerDmg &gt;= 4.7*$weapon&#39;s &quot;atk&quot;)[Critical hit!]
+(if: $weapon&#39;s id is 5)[&lt;br&gt;(set:_heal to (random:(round:($maxHP/10)),(round:($maxHP/100))))(set:$hp to (min:$hp+_heal,$maxHP))Your (print:$weapon&#39;s name) glowed with light! You were healed by _heal.&lt;br&gt;]\
 \
-(if: $weapon&#39;s id is 6)[(print:&quot;Reality bends — one strike becomes two.&quot;)(print:&quot;Your shadow slashes Duskbeak for &quot;+ (str:_playerDmg/2)+ &quot; damage&quot;)&lt;br&gt;]\
+(if: $weapon&#39;s id is 6)[(print:&quot;Reality bends — one strike becomes two.&quot;)&lt;br&gt;(print:&quot;Your shadow slashes Duskbeak for &quot;+ (str:(round:_playerDmg/2))+ &quot; damage&quot;)(set: $enemyP2&#39;s &quot;hp&quot; to (max:0,$enemyP2&#39;s &quot;hp&quot;-(round:_playerDmg/2)))&lt;br&gt;]\
 \
-(if: $enemyP2&#39;s &quot;hp&quot; &gt; 0)[
-    (set: _enemyDmg to (max: 1, (random:(round:($enemyP2&#39;s &quot;atk&quot;*0.75)), (round:($enemyP2&#39;s &quot;atk&quot;*1.2)) - $armor&#39;s &quot;def&quot;))))
-    (set: $hp to (max:0, $hp - _enemyDmg))
-    (if: _enemyDmg &gt; 1)[The (print: $enemyP2&#39;s &quot;name&quot;) strikes back for (print: _enemyDmg) damage!](else:)[The (print: $enemyP2&#39;s &quot;name&quot;)&#39;s attack grazes your (print: $armor&#39;s &quot;name&quot;) for (print: _enemyDmg) damage.]
-]
+(if: $enemyP1&#39;s &quot;hp&quot; &gt; 0)[\
+    (set: _enemyDmg to (max: 1, (random:(round:($enemyP2&#39;s &quot;atk&quot;*1.2)),(round:($enemyP2&#39;s &quot;atk&quot;*0.7))) - $armor&#39;s &quot;def&quot;))\
+    (set: $hp to (max:0, $hp - _enemyDmg))\
 
-[[Continue|A1BossP2 - Main]]
-</tw-passagedata><tw-passagedata pid="68" name="A1Boss-Phase2-Knockback" tags="" position="3000,2475" size="100,100">(set: _kbGain to (random:2,6))\
+    (if:_enemyDmg &gt; 1)[\
+        Duskbeak strikes you with a sweeping talon for (print:_enemyDmg) damage!
+    ](else:)[\
+        Duskbeak&#39;s wingbeat grazes your (print: $armor&#39;s &quot;name&quot;) — (print:_enemyDmg) damage.
+    ]
+]
+[[Continue|A1BossP2 - Main]]</tw-passagedata><tw-passagedata pid="66" name="A1Boss-Phase2-Knockback" tags="" position="3000,2475" size="100,100">(set: _kbGain to (random:2,6))\
 (set: $kb to (min:100, $kb + _kbGain))\
 You push against Duskbeak with all your strength, forcing him backward!  
 Knockback increases by (print: _kbGain). Current KB: (print: $kb) / (print: $enemyP2&#39;s &quot;kbThreshold&quot;)
 
 (if: $kb &gt;= $enemyP2&#39;s &quot;kbThreshold&quot;)[
     Duskbeak teeters on the cliff edge!  
-    [[Cliff Cinematic|A1BossP2 - Cliff]]
+    [[Next|A1BossP2 - Cliff]]
 ](else:)[
 
 (if: $enemyP2&#39;s &quot;hp&quot; &gt; 0)[
     (set: _enemyDmg to (max: 1, (random:(round:($enemyP2&#39;s &quot;atk&quot;*0.75)), (round:($enemyP2&#39;s &quot;atk&quot;*1.2)) - $armor&#39;s &quot;def&quot;))))
     (set: $hp to (max:0, $hp - _enemyDmg))
-    (if: _enemyDmg &gt; 1)[The (print: $enemyP2&#39;s &quot;name&quot;) strikes back for (print: _enemyDmg) damage!](else:)[The (print: $enemyP2&#39;s &quot;name&quot;) barely scratches your (print: $armor&#39;s &quot;name&quot;) for (print: _enemyDmg) damage.]
+    (if: _enemyDmg &gt; 1)[Duskbeak strikes back for (print: _enemyDmg) damage!](else:)[Duskbeak&#39;s slash scratches your (print: $armor&#39;s &quot;name&quot;) for (print: _enemyDmg) damage.]
 ]
 
 [[Continue|A1BossP2 - Main]]
-]</tw-passagedata><tw-passagedata pid="69" name="A1Boss-Phase2-Potion" tags="" position="3100,2475" size="100,100">(if: $potions &gt; 0)[
+]</tw-passagedata><tw-passagedata pid="67" name="A1Boss-Phase2-Potion" tags="" position="3100,2475" size="100,100">(if: $potions &gt; 0)[\
     (set: $potions to $potions - 1)\
     (set: $hp to $maxHP)\
     You drink a potion, and a wave of magic surges through your feathers.  
     Your wounds mend completely! Current HP: (print: $hp) / (print: $maxHP)
-](else:)[
+](else:)[\
     You reach for a potion, but your pouch is empty!  
     There’s nothing left to heal you.
 ]\
 
 [[Back to Battle|A1BossP2 - Main]]
-</tw-passagedata><tw-passagedata pid="70" name="A1BossP2 - Cliff" tags="" position="2975,2600" size="100,100">Duskbeak staggers as your relentless pushes force him closer to the cliff.  
+</tw-passagedata><tw-passagedata pid="68" name="A1BossP2 - Cliff" tags="" position="2975,2600" size="100,100">Duskbeak staggers as your relentless pushes force him closer to the cliff.  
 His wings flail, talons scraping the rocky edge, and the wind howls around him.  
 
 With a final shove, he teeters on the precipice.  
 For a heartbeat, time seems to freeze.  
 
-(if: $honor &gt;= 50)[
+(if: $honor &gt;= 50)[\
     &gt; Duskbeak&#39;s gaze meets yours, defiance and respect entwined.  
     With a desperate flap, he clings to a jagged ledge, alive but defeated.  
     You watch as he retreats into the dark forest below, battered and humbled.  
-]
-(else-if: $honor &lt; 0)[
+]\
+(else-if: $honor &lt; 0)[\
     &gt; Duskbeak screeches in terror, claws failing to grip.  
     With a sickening crack, his wings and legs give way beneath your assault.  
     He plummets into the chasm below, never to rise again.  
-]
-(else:)[
+]\
+(else:)[\
     &gt; Duskbeak loses his balance and stumbles off the cliff, wings flailing.  
     He glides awkwardly to safety on the far side, alive but humiliated.  
-]
+]\
 
 [[After the Battle|A1BossP2 - After]]
-</tw-passagedata><tw-passagedata pid="71" name="A1Boss - Intro2" tags="" position="2725,1500" size="100,100">You burst into the camp, talons sharp, wings spread wide. Flames lick the tents, supplies scatter, and the surviving Dark Flight soldiers flee in terror.  
+</tw-passagedata><tw-passagedata pid="69" name="A1Boss - Intro2" tags="" position="2700,1500" size="100,100">You burst into the camp, talons sharp, wings spread wide. Flames lick the tents, supplies scatter, and the surviving Dark Flight soldiers flee in terror.  
 
 Only one remains to challenge you — **Commander Duskbeak**, standing atop a crate, his black-plumed armor glinting in the firelight.  
 
@@ -1224,10 +1200,10 @@ Only one remains to challenge you — **Commander Duskbeak**, standing atop a cr
 
 This is the **point of no return**. The camp’s fate rests entirely on your wings and talons.  
 
-[[Begin Boss Fight|A1Boss - Main]]</tw-passagedata><tw-passagedata pid="72" name="Dungeon - Main" tags="" position="400,1700" size="100,100">(set: $inDungeon to true)\
+[[Begin Boss Fight|A1Boss - Main]]</tw-passagedata><tw-passagedata pid="70" name="Dungeon - Main" tags="" position="400,1700" size="100,100">(set: $inDungeon to true)\
 (set: $floor to $floor + 1)\
 **Endless Dungeon — Floor (print:$floor)** 
----
+
 
 (if: $floor is 100)[\
 (set:$afterBattle to (dm:&quot;text&quot;, &quot;Continue&quot;,&quot;destination&quot;,&quot;Dungeon - End&quot;))
@@ -1262,7 +1238,7 @@ This is the **point of no return**. The camp’s fate rests entirely on your win
 (else-if: _eventRoll &lt;= 20)[\
     A tripwire snaps beneath your foot!
     Metal shards slice toward you—
-    (set: $hp to (max: 0, $hp - 10))
+    (set: $hp to (max: 1, $hp - $hp/10))
     [[Continue|Dungeon - Main]]
 ]\
 (else-if: _eventRoll &lt;= 30)[\
@@ -1270,6 +1246,7 @@ This is the **point of no return**. The camp’s fate rests entirely on your win
     “One item only,” he croaks.
     
     [[Visit Merchant|Dungeon - Merchant]]
+    [[Ignore him|Dungeon - Main]]
 ]\
 \
 (else:)[\
@@ -1290,8 +1267,8 @@ This is the **point of no return**. The camp’s fate rests entirely on your win
     ]\
  (set: $enemy to (dm:
         &quot;name&quot;, $ename,
-        &quot;hp&quot;, 20 + ($floor-1)*20,
-        &quot;atk&quot;, 5 + $floor,
+        &quot;hp&quot;, 20 + ($floor-1)*5,
+        &quot;atk&quot;, 5 + (round:$floor/2*1.5),
         &quot;xp&quot;, 50 + ($floor-1)*50,
         &quot;gold&quot;, 10 + $floor*5
 ))\
@@ -1323,7 +1300,8 @@ This is the **point of no return**. The camp’s fate rests entirely on your win
 ]\
 
 [[Engage in battle|Dungeon - BattleIntro]]
-]]</tw-passagedata><tw-passagedata pid="73" name="Dungeon - FinalBoss" tags="" position="600,1800" size="100,100">The walls vibrate.  
+]]&lt;br&gt;
+[[Return to Hearthcrest|Hearthcrest - Square]]</tw-passagedata><tw-passagedata pid="71" name="Dungeon - FinalBoss" tags="" position="600,1800" size="100,100">The walls vibrate.  
 Feathers rise from the ground as gravity twists.
 
 A voice older than time whispers through your bones:
@@ -1331,62 +1309,59 @@ A voice older than time whispers through your bones:
 &gt; “CLIMBER… YOU HAVE REACHED THE SUMMIT.”
 
 The air tears open — and something colossal steps through.
-{
 (set: $enemy to (dm:
     &quot;name&quot;, &quot;The Eternal Apex — Crown of the Unfallen&quot;,
-    &quot;hp&quot;, 600,
-    &quot;atk&quot;, 40,
+    &quot;hp&quot;, 5000,
+    &quot;atk&quot;, 80,
     &quot;xp&quot;, 2000,
     &quot;gold&quot;, 500
-))
-}
-This is the final trial of the Endless Dungeon.
-
-[[Face the Apex|Battle - Main]]
-</tw-passagedata><tw-passagedata pid="74" name="Dungeon - MiniIntro" tags="" position="100,1800" size="100,100">(if: $floor is 20)[(set:_bossName to &quot;Ruinbound Captain Varrek&quot;)]
-(else-if: $floor is 40)[ set:_bossName to &quot;Grove Warden Thrynn&quot; ]
-(else-if: $floor is 60)[ set:_bossName to &quot;Depthmaw Shadecaller&quot; ]
-(else-if: $floor is 80)[ set:_bossName to &quot;Forge-Titan Oryx&quot; ]
-(else-if: $floor is 99)[ set:_bossName to &quot;The Hollow Crown&quot; ]
-(else:)[ set:_bossName to &quot;Unknown Guardian&quot; ]
-
-
-A powerful presence fills the chamber.  
-**(print:_bossName)** emerges from the darkness.
-
-(set: $enemy to (dm:
-    &quot;name&quot;, _bossName,
-    &quot;hp&quot;, 200 + ($floor * 30),
-    &quot;atk&quot;, 20 + $floor*2,
-    &quot;xp&quot;, 1000 + $floor * 20,
-    &quot;gold&quot;, 20 + (round:$floor/2)
 ))\
 
-[[Prepare for battle|Dungeon - BattleIntro]]
-</tw-passagedata><tw-passagedata pid="75" name="Dungeon - Merchant" tags="" position="800,1900" size="100,100">The merchant bows deeply.  
+This is the final trial of the Endless Dungeon.
+
+[[Face the Apex|DBattle - Main]]
+</tw-passagedata><tw-passagedata pid="72" name="Dungeon - MiniIntro" tags="" position="100,1800" size="100,100">(if: $floor is 20)[(set:$bossName to &quot;Ruinbound Captain Varrek&quot;)]\
+(else-if: $floor is 40)[(set:$bossName to &quot;Grove Warden Thrynn&quot;)]\
+(else-if: $floor is 60)[(set:$bossName to &quot;Depthmaw Shadecaller&quot;)]\
+(else-if: $floor is 80)[(set:$bossName to &quot;Forge-Titan Oryx&quot;)]\
+(else-if: $floor is 99)[(set:$bossName to &quot;The Hollow Crown&quot;)]\
+(else:)[(set:$bossName to &quot;Unknown Guardian&quot;)]\
+\
+\
+A powerful presence fills the chamber.  
+**(print:$bossName)** emerges from the darkness.
+
+(set: $enemy to (dm:
+    &quot;name&quot;, $bossName,
+    &quot;hp&quot;, 200 + ($floor * 20),
+    &quot;atk&quot;, 20 + $floor,
+    &quot;xp&quot;, 1000 + $floor * 20,
+    &quot;gold&quot;, 20 + 50*(round:$floor/2)
+))\
+
+[[Fight!|DBattle - Main]]
+</tw-passagedata><tw-passagedata pid="73" name="Dungeon - Merchant" tags="" position="800,1900" size="100,100">The merchant bows deeply.  
 “One item only. No refunds, no returns.”
 
 You have (print:$gold) gold.
 
 • [[Buy Potion (10 gold)|Dungeon - BuyPotion]]  
 • [[Ignore and continue|Dungeon - Main]]
-</tw-passagedata><tw-passagedata pid="76" name="Dungeon - BattleIntro" tags="" position="275,2000" size="100,100">You steel your feathers.  
+</tw-passagedata><tw-passagedata pid="74" name="Dungeon - BattleIntro" tags="" position="300,2000" size="100,100">You steel your feathers.  
 The enemy approaches with murderous intent…
 
 [[Fight|Battle - Main]]
-</tw-passagedata><tw-passagedata pid="77" name="Dungeon - BuyPotion" tags="" position="800,2000" size="100,100">{
-(if: $gold &gt;= 10)[
-    (set: $gold to $gold - 10)
-    (set: $potions to $potions + 1)
+</tw-passagedata><tw-passagedata pid="75" name="Dungeon - BuyPotion" tags="" position="800,2000" size="100,100">(if: $gold &gt;= 10)[\
+    (set: $gold to $gold - 10)\
+    (set: $potions to $potions + 1)\
     “Pleasure doing business.”
-](else:)[
+](else:)[\
     “No gold? No deal.”
-]
-}
+]\
+\
 
 [[Back to dungeon|Dungeon - Main]]
-</tw-passagedata><tw-passagedata pid="78" name="Untitled Passage" tags="" position="575,1625" size="100,100">(set:$name to &quot;Quackle&quot;,$level to 100,$maxHP to 2080,$hp to 2080,$potions to 100,$xp to 0,$enemy to (dm:&quot;atk&quot;,1,&quot;hp&quot;,1,&quot;name&quot;,&quot;null&quot;,&quot;xp&quot;,1),$weapon to (dm:&quot;atk&quot;,5,&quot;id&quot;,2,&quot;name&quot;,&quot;Sharpened Stick&quot;),$armor to (dm:&quot;def&quot;,3,&quot;id&quot;,2,&quot;name&quot;,&quot;Cloth Armor&quot;),$afterBattle to (dm:&quot;destination&quot;,&quot;intro&quot;,&quot;text&quot;,&quot;Continue&quot;),$gold to 100,$honor to 300,$xpToNext to 10000,$header to true,$hasMarketUpgrade to false,$urgentQuest to true,$foundEndlessDungeon to false)
-[[Dungeon - Main]] </tw-passagedata><tw-passagedata pid="79" name="Dungeon - End" tags="" position="300,1500" size="100,100">You breathe the dust of Floor 100 — every feather aching, every tendon taut with hard-won endurance.
+</tw-passagedata><tw-passagedata pid="76" name="Dungeon - End" tags="" position="300,1500" size="100,100">You breathe the dust of Floor 100 — every feather aching, every tendon taut with hard-won endurance.
 
 The chamber lies still.
 
@@ -1422,82 +1397,194 @@ A single object forms in your grasp — pulsing, hungry, triumphant.
 **You have conquered The Endless.**
 
 [[Ascend from the Depths|Hearthcrest - Square]]
-(set:$unlockedWeapons&#39;s &quot;id6&quot; to true)
+(set:$unlockedWeapon&#39;s &quot;id6&quot; to true)
 (set:$unlockedArmor&#39;s &quot;id5&quot; to true)
-(set:$xp to $xp + 1000)
-(set:$gold to $gold + 500)
-(set:$EndlessDungeonComp to true)
+(set:$xp to $xp + 10000)
+(set:$gold to $gold + 5000)
+(set:$endlessDungeonComp to true)
 (set: $weapon to (dm: &quot;name&quot;, &quot;Oblivion Featherscythe&quot;, &quot;atk&quot;, 70, &quot;id&quot;, 6))
-(set: $armor to (dm:&quot;name&quot;,&quot;Oblivion Shroudplate&quot;,&quot;def&quot;,50,&quot;id&quot;,5))</tw-passagedata><tw-passagedata pid="80" name="Armory" tags="" position="1725,1550" size="100,100">You enter the **Armory of Shining Iron** — racks of steel feathers, blades, and plate gleam beneath lantern-light.  
+(set: $armor to (dm:&quot;name&quot;,&quot;Oblivion Shroudplate&quot;,&quot;def&quot;,50,&quot;id&quot;,5))</tw-passagedata><tw-passagedata pid="77" name="Armory" tags="" position="1725,1550" size="100,100">You enter the **Armory of Shining Iron** — racks of steel feathers, blades, and plate gleam beneath lantern-light.  
 Two wings extend before you:
 
 • [[Hall of Blades|Armory - Weapons]]  
 • [[Wing of Aegis|Armory - Armor]]  
 
 [[Back|Hearthcrest - Barracks]]
-</tw-passagedata><tw-passagedata pid="81" name="Armory - Weapons" tags="" position="1725,1450" size="100,100">Polished steel, obsidian edge, and feathers hardened like volcanic glass.
+</tw-passagedata><tw-passagedata pid="78" name="Armory - Weapons" tags="" position="1725,1450" size="100,100">Polished steel, obsidian edge, and feathers hardened like volcanic glass.
 
 Weapon Selection:
 
 (if:$unlockedWeapon&#39;s &quot;id0&quot;)[\
-	(link:&quot;Null Blade&quot;)[(set: $weapon to (dm:&quot;name&quot;, &quot;null blade&quot;,&quot;atk&quot;, 10000,&quot;id&quot;,0))(print:&quot;Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
-
+	(link:&quot;Null Blade&quot;)[(set: $weapon to (dm:&quot;name&quot;, &quot;null blade&quot;,&quot;atk&quot;, 10000,&quot;id&quot;,0))(print:&quot;Equipped&quot;)]](else:)[Locked]
+&lt;br&gt;
 (if:$unlockedWeapon&#39;s &quot;id1&quot;)[\
-	(link:&quot;Dull Stick&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Dull Stick&quot;, &quot;atk&quot;, 3, &quot;id&quot;, 1))(print:&quot;Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
-
+	(link:&quot;Dull Stick&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Dull Stick&quot;, &quot;atk&quot;, 3, &quot;id&quot;, 1))(print:&quot;Equipped&quot;)]](else:)[Locked]
+&lt;br&gt;
 (if:$unlockedWeapon&#39;s &quot;id2&quot;)[\
-	(link:&quot;Sharpened Stick&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Sharpened Stick&quot;, &quot;atk&quot;, 5,&quot;id&quot;,2))(print:&quot;Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
-
+	(link:&quot;Sharpened Stick&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Sharpened Stick&quot;, &quot;atk&quot;, 5,&quot;id&quot;,2))(print:&quot;Equipped&quot;)]](else:)[Locked]
+&lt;br&gt;
 (if:$unlockedWeapon&#39;s &quot;id3&quot;)[\
-	(link:&quot;Blessed Steelblade&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Blessed Steelblade&quot;, &quot;atk&quot;, 20,,&quot;id&quot;,3))(print:&quot;Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
-
+	(link:&quot;Blessed Steelblade&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Blessed Steelblade&quot;, &quot;atk&quot;, 20,,&quot;id&quot;,3))(print:&quot;Equipped&quot;)]](else:)[Locked]
+&lt;br&gt;
 (if:$unlockedWeapon&#39;s &quot;id4&quot;)[\
-	(link:&quot;Rogue Talon Blade&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Rogue Talon Blade&quot;, &quot;atk&quot;, 30,&quot;id&quot;,4))(print:&quot;Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
-
+	(link:&quot;Rogue Talon Blade&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Rogue Talon Blade&quot;, &quot;atk&quot;, 30,&quot;id&quot;,4))(print:&quot;Equipped&quot;)]](else:)[Locked]
+&lt;br&gt;
 (if:$unlockedWeapon&#39;s &quot;id5&quot;)[\
-	(link:&quot;Featherlight Katana&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Featherlight Katana&quot;, &quot;atk&quot;, 30,&quot;id&quot;,5))(print:&quot;Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
-
+	(link:&quot;Featherlight Katana&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Featherlight Katana&quot;, &quot;atk&quot;, 30,&quot;id&quot;,5))(print:&quot;Equipped&quot;)]](else:)[Locked]
+&lt;br&gt;
 (if:$unlockedWeapon&#39;s &quot;id6&quot;)[\
-	(link:&quot;Oblivion Featherscythe&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Oblivion Featherscythe&quot;, &quot;atk&quot;, 70, &quot;id&quot;, 6))(print:&quot;Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
-
-[[Back|Armory]]</tw-passagedata><tw-passagedata pid="82" name="Armory - Armor" tags="" position="1625,1550" size="100,100">Forged plates, war-torn leather, and feathers bound with iron sinew.
+	(link:&quot;Oblivion Featherscythe&quot;)[(set: $weapon to (dm: &quot;name&quot;, &quot;Oblivion Featherscythe&quot;, &quot;atk&quot;, 70, &quot;id&quot;, 6))(print:&quot;Equipped&quot;)]](else:)[Locked]
+&lt;br&gt;
+[[Back|Armory]]</tw-passagedata><tw-passagedata pid="79" name="Armory - Armor" tags="" position="1625,1550" size="100,100">Forged plates, war-torn leather, and feathers bound with iron sinew.
 
 Armor Selection:
 
 (if:$unlockedArmor&#39;s &quot;id0&quot;)[\
-    (link:&quot;Null Armor&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Null Armor&quot;,&quot;def&quot;,1000,&quot;id&quot;,0))(print:&quot; Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
+    (link:&quot;Null Armor&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Null Armor&quot;,&quot;def&quot;,1000,&quot;id&quot;,0))(print:&quot; Equipped&quot;)]](else:)[Locked]&lt;br&gt;
 
 (if:$unlockedArmor&#39;s &quot;id1&quot;)[\
-    (link:&quot;Half-broken Helmet&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Half-broken Helmet&quot;,&quot;def&quot;,1,&quot;id&quot;,1))(print:&quot; Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
+    (link:&quot;Half-broken Helmet&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Half-broken Helmet&quot;,&quot;def&quot;,1,&quot;id&quot;,1))(print:&quot; Equipped&quot;)]](else:)[Locked]&lt;br&gt;
 
 (if:$unlockedArmor&#39;s &quot;id2&quot;)[\
-	(link:&quot;Cloth Armor&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Cloth Armor&quot;,&quot;def&quot;,3,&quot;id&quot;,2))(print:&quot; Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
+	(link:&quot;Cloth Armor&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Cloth Armor&quot;,&quot;def&quot;,3,&quot;id&quot;,2))(print:&quot; Equipped&quot;)]](else:)[Locked]&lt;br&gt;
 
 (if:$unlockedArmor&#39;s &quot;id3&quot;)[\
-	(link:&quot;Guardian&#39;s Aegis&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Guardian&#39;s Aegis&quot;,&quot;def&quot;,15,&quot;id&quot;,3))(print:&quot; Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
+	(link:&quot;Guardian&#39;s Aegis&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Guardian&#39;s Aegis&quot;,&quot;def&quot;,15,&quot;id&quot;,3))(print:&quot; Equipped&quot;)]](else:)[Locked]&lt;br&gt;
 
 (if:$unlockedArmor&#39;s &quot;id4&quot;)[\
-	(link:&quot;Dark Flight Carapace&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Dark Flight Carapace&quot;,&quot;def&quot;,20,&quot;id&quot;,4))(print:&quot; Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
+	(link:&quot;Dark Flight Carapace&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Dark Flight Carapace&quot;,&quot;def&quot;,20,&quot;id&quot;,4))(print:&quot; Equipped&quot;)]](else:)[Locked]&lt;br&gt;
 
 (if:$unlockedArmor&#39;s &quot;id5&quot;)[\
-	(link:&quot;Oblivion Shroudplate&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Oblivion Shroudplate&quot;,&quot;def&quot;,50,&quot;id&quot;,5))(print:&quot; Equipped&quot;)]]
-(else:)[Locked]&lt;br&gt;
+	(link:&quot;Oblivion Shroudplate&quot;)[(set: $armor to (dm:&quot;name&quot;,&quot;Oblivion Shroudplate&quot;,&quot;def&quot;,50,&quot;id&quot;,5))(print:&quot; Equipped&quot;)]](else:)[Locked]&lt;br&gt;
 
 [[Back|Armory]]
-</tw-passagedata><tw-passagedata pid="83" name="Dungeon - Entrance (not released yet)" tags="" position="2000,1700" size="100,100">Not Available Yet!
-[[Return to Hearthcrest|Hearthcrest - Square]]</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="80" name="Dungeon - Entrance" tags="" position="2000,1700" size="100,100">(set:$footer to false)\
+(set:$floor to 0)\
+You stand before the mouth of the Endless Dungeon —  
+a stone archway that seems to swallow the light around it.  
+Wind rushes upward from below, cold and endless.
+
+Some say no one reaches the bottom.  
+Some say there *is* no bottom.
+
+---
+(if: $endlessDungeonComp is true)[\
+	&lt;br&gt;The gate lies inert.  
+	Whatever power once breathed beneath these stones has gone silent forever.
+
+	&lt;span style=&quot;opacity:60%&quot;&gt;You cannot enter again.&lt;/span&gt;&lt;br&gt;
+
+	[[Return to Hearthcrest|Hearthcrest - Square]]
+]\
+\
+(else:)[\
+	The darkness waits — patient, ancient, hungry.&lt;br&gt;
+	Do you step inside?
+
+	[[Enter the Endless Dungeon|Dungeon - Main]]
+	[[Back to Hearthcrest|Hearthcrest - Square]]
+]\
+\</tw-passagedata><tw-passagedata pid="81" name="test 1" tags="" position="700,900" size="100,100">(set:$name to &quot;Quackle Featherbottom&quot;,$level to 1,$maxHP to 100,$hp to 100,$potions to 1,$xp to 0,$enemy to (dm:&quot;atk&quot;,1,&quot;hp&quot;,1,&quot;name&quot;,&quot;null&quot;,&quot;xp&quot;,1),$weapon to (dm:&quot;atk&quot;,5,&quot;id&quot;,2,&quot;name&quot;,&quot;Sharpened Stick&quot;),$armor to (dm:&quot;def&quot;,3,&quot;id&quot;,2,&quot;name&quot;,&quot;Cloth Armor&quot;),$unlockedWeapon to (dm:&quot;id0&quot;,false,&quot;id1&quot;,true,&quot;id2&quot;,true,&quot;id3&quot;,false,&quot;id4&quot;,false,&quot;id5&quot;,false,&quot;id6&quot;,false),$unlockedArmor to (dm:&quot;id0&quot;,false,&quot;id1&quot;,true,&quot;id2&quot;,true,&quot;id3&quot;,false,&quot;id4&quot;,false,&quot;id5&quot;,false),$afterBattle to (dm:&quot;destination&quot;,&quot;intro&quot;,&quot;text&quot;,&quot;Continue&quot;),$gold to 100,$honor to 30,$xpToNext to 100,$header to true,$EndlessDungeonComp to false,$hasMarketUpgrade to false,$urgentQuest to false,$foundEndlessDungeon to false)
+[[test 2]]</tw-passagedata><tw-passagedata pid="82" name="test 2" tags="" position="800,900" size="100,100">(set:$enemy to (dm:&quot;atk&quot;,20,&quot;gold&quot;,250,&quot;hp&quot;,0,&quot;name&quot;,&quot;Dark Flight Guard&quot;,&quot;xp&quot;,300),$afterBattle to (dm:&quot;destination&quot;,&quot;UrgentMission - GoodEnding&quot;,&quot;text&quot;,&quot;Return to Hearthcrest&quot;),$urgentQuest to false,$gold to 5772,$xp to 8300,$level to 8,$xpToNext to 800,$maxHP to 240,$roll to 44,$foundGold to 19,$hp to 240,$honor to 85,$unlockedWeapon to (dm:&quot;id0&quot;,false,&quot;id1&quot;,true,&quot;id2&quot;,true,&quot;id3&quot;,true,&quot;id4&quot;,false,&quot;id5&quot;,false,&quot;id6&quot;,true),$unlockedArmor to (dm:&quot;id0&quot;,false,&quot;id1&quot;,true,&quot;id2&quot;,true,&quot;id3&quot;,true,&quot;id4&quot;,false,&quot;id5&quot;,true),$weapon to (dm:&quot;atk&quot;,20,&quot;id&quot;,3,&quot;name&quot;,&quot;Blessed Steelblade&quot;),$armor to (dm:&quot;def&quot;,15,&quot;id&quot;,3,&quot;name&quot;,&quot;Guardian’s Aegis&quot;),$name to &quot;Quackle Featherbottom&quot;,$potions to 1,$header to true,$EndlessDungeonComp to false,$hasMarketUpgrade to true,$foundEndlessDungeon to false,$urgentQuestComp to true,$A1Boss to false,$A1BossFound to true,$potionMem to 1)
+[[Hearthcrest - Square]] </tw-passagedata><tw-passagedata pid="83" name="DBattle - Potion" tags="" position="900,2700" size="100,100">(if: $potions &gt; 0)[
+    (set: $potions to $potions - 1)\
+    (set: $hp to $maxHP)\
+    You drink a potion, and a wave of magic surges through your feathers.  
+    Your wounds mend completely! Current HP: (print: $hp) / (print: $maxHP)
+](else:)[
+    You reach for a potion, but your pouch is empty!  
+    There’s nothing left to heal you.  
+]
+[[Back to battle|DBattle - Main]]
+</tw-passagedata><tw-passagedata pid="84" name="DBattle - Main" tags="" position="800,2700" size="100,100">(if: $enemy&#39;s &quot;hp&quot; &lt;= 0)[\
+    You defeat (print: $enemy&#39;s &quot;name&quot;)!
+	You earned (print: $enemy&#39;s gold) gold and (print: $enemy&#39;s xp) xp!
+     (display:&quot;BattleFinishScript&quot;)
+    (link-goto:$afterBattle&#39;s &quot;text&quot;,$afterBattle&#39;s &quot;destination&quot;)
+]\
+(else-if: $hp &lt;= 0)[\
+	You died
+    [[Restart|SetName]]
+]\
+(else:)[\
+**Enemy:** (print: $enemy&#39;s &quot;name&quot;) — HP: (print: $enemy&#39;s &quot;hp&quot;)  
+**You:** HP (print: $hp) / (print: $maxHP)  
+**Potions:** (print: $potions)
+---  
+
+Choose an action:  
+• [[Attack|DBattle - Attack]]  
+• [[Use Potion|DBattle - Potion]]
+]\
+</tw-passagedata><tw-passagedata pid="85" name="DBattle - Attack" tags="" position="800,2800" size="100,100">(set: _playerDmg to (random:(round:(5*$weapon&#39;s &quot;atk&quot;)),(round:(1*$weapon&#39;s &quot;atk&quot;))))\
+(set: $enemy&#39;s &quot;hp&quot; to (max:0,$enemy&#39;s &quot;hp&quot;-_playerDmg))\
+You slash (print: $enemy&#39;s &quot;name&quot;) with your (print: $weapon&#39;s &quot;name&quot;) for (print: _playerDmg) damage! (if:_playerDmg &gt;= 4.7*$weapon&#39;s &quot;atk&quot;)[Critical hit!]
+(if: $weapon&#39;s id is 5)[&lt;br&gt;(set:_heal to (random:(round:($maxHP/4)),(round:($maxHP/40))))(set:$hp to (min:$hp+_heal,$maxHP))Your (print:$weapon&#39;s name) glowed with light! You were healed by _heal.&lt;br&gt;]\
+\
+(if: $weapon&#39;s id is 6)[(print:&quot;Reality bends — one strike becomes two.&quot;)&lt;br&gt;(print:&quot;Your shadow slashes &quot;+$enemy&#39;s name +&quot; for &quot;+ (str:(round:_playerDmg/2))+ &quot; damage&quot;)(set: $enemy&#39;s &quot;hp&quot; to (max:0,$enemy&#39;s &quot;hp&quot;-(round:_playerDmg/2)))&lt;br&gt;]\
+\
+(if: $enemy&#39;s &quot;hp&quot; &gt; 0)[\
+    (set: _enemyDmg to (max: 1, (random:(round:($enemy&#39;s &quot;atk&quot;*1.2)),(round:($enemy&#39;s &quot;atk&quot;*0.75)) - $armor&#39;s &quot;def&quot;)))\
+    (set: $hp to (max: 0, $hp - _enemyDmg))\
+    (if: _enemyDmg &gt; 1)[(print: $enemy&#39;s &quot;name&quot;) hits you for (print: _enemyDmg) damage!](else:)[The (print: $enemy&#39;s &quot;name&quot;)&#39;s attack scratches your  (print: $armor&#39;s &quot;name&quot;) for (print:_enemyDmg) damage.&lt;br&gt;&lt;br&gt;]\
+]
+[[Continue|DBattle - Main]]
+</tw-passagedata><tw-passagedata pid="86" name="Menu" tags="" position="300,1200" size="100,100">Goose RPG Demo
+By Quackle Studios
+
+[[Credits]]
+
+(if:(saved-games:) contains &quot;Slot1&quot;)[
+    (link:&quot;Load from Slot 1&quot;)[(load-game:&quot;Slot1&quot;)]
+](else:)[
+    &lt;i&gt;Slot 1 — Empty&lt;/i&gt;
+]
+
+
+(if:(saved-games:) contains &quot;Slot2&quot;)[
+    (link:&quot;Load from Slot 2&quot;)[(load-game:&quot;Slot2&quot;)]
+](else:)[
+    &lt;i&gt;Slot 2 — Empty&lt;/i&gt;
+]
+
+
+(if:(saved-games:) contains &quot;Slot3&quot;)[
+    (link:&quot;Load from Slot 3&quot;)[(load-game:&quot;Slot3&quot;)]
+](else:)[
+    &lt;i&gt;Slot 3 — Empty&lt;/i&gt;
+]
+
+
+[[New File|SetName]]
+</tw-passagedata><tw-passagedata pid="87" name="Footer" tags="footer" position="1100,2800" size="100,100">(if: $footer is true)[\
+---
+=|=
+	=== Save / Load ===
+
+	{(link:&quot;Save to File 1&quot;)[
+  (if:(save-game:&quot;Slot1&quot;))[
+    Game saved!
+  ](else: )[
+    Sorry, I couldn&#39;t save your game.
+  ]
+]}
+{(link:&quot;Save to File 2&quot;)[
+  (if:(save-game:&quot;Slot2&quot;))[
+    Game saved!
+  ](else: )[
+    Sorry, I couldn&#39;t save your game.
+  ]
+]}
+{(link:&quot;Save to File 3&quot;)[
+  (if:(save-game:&quot;Slot3&quot;))[
+    Game saved!
+  ](else: )[
+    Sorry, I couldn&#39;t save your game.
+  ]
+]}
+|=|
+]
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
