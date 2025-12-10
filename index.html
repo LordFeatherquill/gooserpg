@@ -1238,7 +1238,7 @@ This is the **point of no return**. The camp’s fate rests entirely on your win
 (else-if: _eventRoll &lt;= 20)[\
     A tripwire snaps beneath your foot!
     Metal shards slice toward you—
-    (set: $hp to (max: 1, (round:$hp - $hp/10)))
+    (set: $hp to (max: 1, (round:$hp - $maxHP/10)))
     [[Continue|Dungeon - Main]]
 ]\
 (else-if: _eventRoll &lt;= 30)[\
