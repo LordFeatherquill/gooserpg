@@ -1529,7 +1529,7 @@ Choose an action:
 </tw-passagedata><tw-passagedata pid="85" name="DBattle - Attack" tags="" position="800,2800" size="100,100">(set: _playerDmg to (random:(round:(5*$weapon&#39;s &quot;atk&quot;)),(round:(1*$weapon&#39;s &quot;atk&quot;))))\
 (set: $enemy&#39;s &quot;hp&quot; to (max:0,$enemy&#39;s &quot;hp&quot;-_playerDmg))\
 You slash (print: $enemy&#39;s &quot;name&quot;) with your (print: $weapon&#39;s &quot;name&quot;) for (print: _playerDmg) damage! (if:_playerDmg &gt;= 4.7*$weapon&#39;s &quot;atk&quot;)[Critical hit!]
-(if: $weapon&#39;s id is 5)[&lt;br&gt;(set:_heal to (random:(round:($maxHP/4)),(round:($maxHP/40))))(set:$hp to (min:$hp+_heal,$maxHP))Your (print:$weapon&#39;s name) glowed with light! You were healed by _heal.&lt;br&gt;]\
+(if: $weapon&#39;s id is 5)[&lt;br&gt;(set:_heal to (random:(round:($maxHP/20)),(round:($maxHP/40))))(set:$hp to (min:$hp+_heal,$maxHP))Your (print:$weapon&#39;s name) glowed with light! You were healed by _heal.&lt;br&gt;]\
 \
 (if: $weapon&#39;s id is 6)[(print:&quot;Reality bends — one strike becomes two.&quot;)&lt;br&gt;(print:&quot;Your shadow slashes &quot;+$enemy&#39;s name +&quot; for &quot;+ (str:(round:_playerDmg/2))+ &quot; damage&quot;)(set: $enemy&#39;s &quot;hp&quot; to (max:0,$enemy&#39;s &quot;hp&quot;-(round:_playerDmg/2)))&lt;br&gt;]\
 \
