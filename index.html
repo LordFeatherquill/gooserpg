@@ -360,8 +360,8 @@ The heart of **Hearthcrest** beats here. Lanterns hang from the tall arches, and
 [[Explore Hearthwood Forest|ExploreForest]]
 (if:$foundEndlessDungeon is true and $endlessDungeonComp is not true)[[[Explore the Endless Dungeon|Dungeon - Entrance]]&lt;br&gt;]\
 (if:$A1BossFound is true)[[[Head to the Dark Flight camp|A1Boss - Intro1]]&lt;br&gt;]\
-(if:$level &gt;=3 and $urgentQuestComp is not true)[(set:$urgentQuest to true)]
-(if:$level &gt;=5 and $urgentQuestComp is true and $A1BossFound is not true)[(set:$A1Boss to true)]
+(if:$level &gt;=3 and $urgentQuestComp is not true)[(set:$urgentQuest to true)]\
+(if:$level &gt;=5 and $urgentQuestComp is true and $A1BossFound is not true)[(set:$A1Boss to true)]\
 </tw-passagedata><tw-passagedata pid="20" name="UrgentMission - Intro 1" tags="" position="1500,1300" size="100,100">Captain Featherbane lowers his voice. &quot;$name, listen carefully. A Dark Flight camp has been spotted in the forest outskirts.  
 You are to **reconnoiter the camp** — gather information, count their numbers, and **under no circumstances engage them**. Do you understand?&quot;
 
